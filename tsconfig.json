@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "module": "ES2020",
+      "noImplicitAny": false,
+      "removeComments": false,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "target": "ES6",
+      "declaration": false,
+      "types": ["gapi"]
+    },
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Subscribe to Calendar</title>
+        
+        <script type="text/javascript">
+            let script = document.createElement("script");
+            script.type = "module";
+            script.src = `index.js?v=${Date.now()}`;
+            document.head.appendChild(script);
+        </script>
+        <!-- <script type="text/javascript" src="index.js"></script> -->
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        
+        <script type="text/javascript">
+            window.exports = {};
+        </script>
+    </head>
+    <body>
+        <p>1. Sign into your Google account:</p>
+        <button id="loginButton">Sign in with Google</button>
+
+        <p>2. Click <button id="subscribe">here</button> to subscribe to the <span id="calendarName"></span> calendar</p>
+        
+        <p style="color: lightgreen" id="status"></p>
+            
+        </p>
+
+
+    </body>
+</html>
