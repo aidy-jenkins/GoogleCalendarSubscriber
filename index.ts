@@ -23,6 +23,10 @@ class Index {
             this._calendarName.textContent = decodeURIComponent(this.queryParams.calendarName);
         }
 
+        if(!this.queryParams.calendarid) {
+            document.body.textContent = "Invalid URL - no calendar id provided";
+        }        
+
         this._apiClient = google.accounts.oauth2.initTokenClient({
             client_id: Index.clientId,
             scope: 'https://www.googleapis.com/auth/calendar',
